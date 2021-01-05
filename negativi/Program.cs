@@ -15,7 +15,7 @@ namespace negativi
 			Console.WriteLine(Convert.ToString(c, 2));
 			int value = 31;
 			int somma = value;
-			value = value + 1; // NOT
+			value = ~ value + 1; // NOT
 							   // value = value+1;
 			somma = somma + value;
 			Console.WriteLine($"{value} e {somma}");
@@ -23,6 +23,12 @@ namespace negativi
 			Console.WriteLine(Convert.ToString(number, 2));
 			short number1 = (short)number;
 			Console.WriteLine(number1);
+
+
+			short  num = -125;
+			Console.WriteLine(Convert.ToString(num, 2));
+			
+
 		}
 	}
 }
